@@ -1,0 +1,21 @@
+MySQL:
+  host: "localhost"
+  user: "root"
+  password: ""
+  database: "db"
+
+Config:
+  book:
+    page1:
+      motivos:
+        - 'Uso_de_Hack'
+        - 'Flood/Spam'
+        - 'Ofensa_ao_Servidor'
+        - 'Caps-Lock'
+        - 'Difamação'
+        - 'Palavras_Inadequadas'
+        - 'Iniciativa_de_Flood'
+        - 'Ofensa_ao_Jogador'
+    page2:
+      motivos:
+        - 'Kill-aura'

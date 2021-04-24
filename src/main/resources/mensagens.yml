@@ -1,0 +1,9 @@
+Mensagens:
+  reportou: "&eParabéns, você reportou o jogador &f{player}&e com sucesso."
+  excluiu-reporte: "&eReporte do jogador &f{player}&e excluido com sucesso."
+  reportado:
+    - ''
+    - '&c * O jogador &6{player}&c foi reportado pelo o jogador &6{autor}'
+    - '&c * Pelo motivo: &6{motivo}'
+    - '&c * Na data: &6{data}'
+    - ''

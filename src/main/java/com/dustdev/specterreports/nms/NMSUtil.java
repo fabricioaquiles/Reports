@@ -1,6 +1,6 @@
 package com.dustdev.specterreports.nms;
 
-import com.dustdev.specterreports.Main;
+import com.dustdev.specterreports.SpecterReports;
 import com.dustdev.specterreports.configuration.values.GeneralValue;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.ClickEvent;
@@ -10,14 +10,13 @@ import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
-import sun.java2d.loops.FillRect;
 
 public class NMSUtil
 {
     private static NMS nms;
-    protected final Main plugin;
+    protected final SpecterReports plugin;
 
-    public NMSUtil(Main plugin) { this.plugin = plugin; }
+    public NMSUtil(SpecterReports plugin) { this.plugin = plugin; }
 
     public void setupNMS() {
         String version = null;
@@ -43,7 +42,7 @@ public class NMSUtil
 
     public static NMS getNMS() { return nms; }
 
-    public static TextComponent sendMotivos(Player player, String page, OfflinePlayer name) {
+    public static TextComponent sendMotivos(Player player, String page, Player name) {
         TextComponent textComponent = new TextComponent("Reportar "+name.getName()+":\n\n");
         for(String key :GeneralValue.get(GeneralValue::book).getStringList(page+".motivos")) {
 

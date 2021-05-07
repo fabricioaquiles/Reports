@@ -27,7 +27,7 @@ public class NMS_V1_8_R3 implements NMS {
 
 
     @Override
-    public void buildPage(Player player, BookMeta meta, List<String> configPages, OfflinePlayer name) {
+    public void buildPage(Player player, BookMeta meta, List<String> configPages, Player name) {
         List<IChatBaseComponent> pages = new ArrayList<IChatBaseComponent>();
         List<IChatBaseComponent> bookPages = null;
         try {

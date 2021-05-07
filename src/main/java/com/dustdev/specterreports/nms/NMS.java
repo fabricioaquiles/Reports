@@ -12,5 +12,5 @@ public interface NMS {
 
     void sendPacket(Player paramPlayer, ByteBuf paramByteBuf);
 
-    void buildPage(Player paramPlayer, BookMeta paramBookMeta, List<String> paramList, OfflinePlayer paramName);
+    void buildPage(Player paramPlayer, BookMeta paramBookMeta, List<String> paramList, Player paramName);
 }

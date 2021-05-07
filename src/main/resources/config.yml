@@ -5,6 +5,10 @@ MySQL:
   database: "db"
 
 Config:
+  bot:
+    use: false
+    token: ''
+    channel-id: ''
   book:
     page1:
       motivos:

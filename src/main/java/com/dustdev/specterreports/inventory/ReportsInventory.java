@@ -6,7 +6,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import com.dustdev.specterreports.Main;
+import com.dustdev.specterreports.SpecterReports;
 import org.bukkit.inventory.meta.SkullMeta;
 
 import java.text.SimpleDateFormat;
@@ -18,7 +18,7 @@ public class ReportsInventory {
 
     public void open(Player p) {
         List<ItemStack> itens = new ArrayList<>();
-        Main.instance.reportsDAO.selectAll().forEach(key -> {
+        SpecterReports.instance.reportsDAO.selectAll().forEach(key -> {
 
             ItemStack item = new ItemStack(Material.SKULL_ITEM);
             item.setDurability((short) 3);
@@ -54,7 +54,7 @@ public class ReportsInventory {
                 .withOnClick(new Scroller.ChooseItemRunnable() {
                     @Override
                     public void run(Player player, ItemStack item) {
-                        Main.instance.reportsDAO.selectAll().forEach(key -> {
+                        SpecterReports.instance.reportsDAO.selectAll().forEach(key -> {
                             if (item.getItemMeta().getDisplayName().replace("§a", "").equalsIgnoreCase(key.getPlayer())) {
                                 new DetalhesInventory().open(player, key.getPlayer());
                             }

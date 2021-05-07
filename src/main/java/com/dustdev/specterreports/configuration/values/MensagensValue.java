@@ -27,6 +27,7 @@ public class MensagensValue implements ConfigurationInjectable {
     @ConfigField("reportou") private String reportou;
     @ConfigField("reportado") private List<String> reportado;
     @ConfigField("excluiu-reporte") private String excluiu;
+    @ConfigField("sereportor") private String sereportor;
 
     public static <T> T get(Function<MensagensValue, T> function) {
         return function.apply(instance);

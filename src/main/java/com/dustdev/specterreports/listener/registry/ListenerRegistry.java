@@ -1,6 +1,6 @@
 package com.dustdev.specterreports.listener.registry;
 
-import com.dustdev.specterreports.Main;
+import com.dustdev.specterreports.SpecterReports;
 import com.dustdev.specterreports.listener.*;
 import lombok.Data;
 import org.bukkit.Bukkit;
@@ -8,7 +8,7 @@ import org.bukkit.Bukkit;
 @Data(staticConstructor = "of")
 public class ListenerRegistry {
 
-    private final Main instance;
+    private final SpecterReports instance;
 
     public void register() {
         try {

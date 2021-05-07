@@ -3,7 +3,6 @@ package com.dustdev.specterreports.sql;
 import com.henryfabio.sqlprovider.connector.SQLConnector;
 import com.henryfabio.sqlprovider.connector.type.SQLDatabaseType;
 import com.henryfabio.sqlprovider.connector.type.impl.MySQLDatabaseType;
-import com.henryfabio.sqlprovider.connector.type.impl.SQLiteDatabaseType;
 import lombok.Data;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.ConfigurationSection;

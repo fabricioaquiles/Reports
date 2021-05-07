@@ -1,6 +1,6 @@
 package com.dustdev.specterreports.commands.registry;
 
-import com.dustdev.specterreports.Main;
+import com.dustdev.specterreports.SpecterReports;
 import com.dustdev.specterreports.commands.ReportsCommand;
 import lombok.Data;
 import lombok.Getter;
@@ -11,7 +11,7 @@ import org.bukkit.Bukkit;
 @Data(staticConstructor = "of")
 public class CommandRegistry {
 
-    private final Main plugin;
+    private final SpecterReports plugin;
 
     public void register() {
         try {

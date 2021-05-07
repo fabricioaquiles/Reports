@@ -1,6 +1,6 @@
 package com.dustdev.specterreports.inventory;
 
-import com.dustdev.specterreports.Main;
+import com.dustdev.specterreports.SpecterReports;
 import com.dustdev.specterreports.configuration.values.GeneralValue;
 import com.dustdev.specterreports.nms.NMSUtil;
 import io.netty.buffer.ByteBuf;
@@ -17,7 +17,7 @@ import java.util.List;
 
 public class ReportInventory {
 
-    public void open(Player p, OfflinePlayer name) {
+    public void open(Player p, Player name) {
         int slot = p.getInventory().getHeldItemSlot();
         ItemStack oldItem = p.getItemInHand();
 
@@ -42,7 +42,7 @@ public class ReportInventory {
         ByteBuf buf = Unpooled.buffer(256);
         buf.setByte(0, 0);
         buf.writerIndex(1);
-        Main.sendPacket(p, buf);
+        SpecterReports.sendPacket(p, buf);
         p.getInventory().setItem(slot, oldItem);
     }
 }

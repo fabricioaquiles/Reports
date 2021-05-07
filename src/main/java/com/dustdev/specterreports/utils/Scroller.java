@@ -7,7 +7,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
-import com.dustdev.specterreports.Main;
+import com.dustdev.specterreports.SpecterReports;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -49,7 +49,7 @@ public class Scroller {
                     }
                 }
             }
-        }, Main.getPlugin(Main.class));
+        }, SpecterReports.getPlugin(SpecterReports.class));
     }
 
     private List<ItemStack> items;
